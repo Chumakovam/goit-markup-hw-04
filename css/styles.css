@@ -204,16 +204,21 @@ img {
  }
 
  
- .button-mail:hover .nav-icon-mail,
- .button-tel:hover .nav-icon-tel {
-     fill: var(--accent-color);
- }
-
 
  .button-tel:hover,
  .button-tel:focus {
      color: var(--accent-color);
  }
+
+ .button-mail:hover .nav-icon-mail,
+ .button-mail:focus .nav-icon-mail {
+     fill: var(--accent-color);
+ }
+
+ .button-tel:hover .nav-icon-tel,
+ .button-tel:focus .nav-icon-tel {
+    fill: var(--accent-color);
+}
 
 
  /* ГЕРОЙ*/
@@ -276,12 +281,12 @@ img {
        display: flex;
        padding: 0;
        list-style: none;
-      
+
    }
 
    .advantages .item { 
        display: block;
-       width: 270px; 
+    
    }
    .advantages .item:not(:last-child)  {
     margin-right: 30px;
@@ -290,12 +295,17 @@ img {
    
   .advantages .icon {
     background-color: #F5F4FA;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 
   .advanteges-list {
-   width: 270px;
-      height: 120px;
+   
+      width: 70px;
+      height: 70px;
   }
   
 .titel-section {
@@ -304,7 +314,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .text-section {
     font-weight: 400;
@@ -340,7 +350,6 @@ img {
 
 .team-bg{
     background-color: #F5F4FA;
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -351,7 +360,9 @@ img {
     
 }
 
-
+.flex-team .item{
+    background-color: #fff;
+}
 .flex-team .item:not(:last-child) {
     margin-right: 30px;
 }
@@ -397,27 +408,29 @@ img {
     border-radius: 50%;
     width: 44px;
     height: 44px;
+   background-color: #fff;
+  
+}
+
+.bg:hover, 
+.bg:focus {
+    background-color: var(--accent-color);
    
 }
-
-
-
-.bg:hover {
-    background-color: var(--accent-color);
-    fill: #fff;
-}
  
-
 .social-icon {
-    fill:#AFB1B8;  
+    fill:#AFB1B8; 
     
 }
 
-
-.social-icon:hover {
+.bg:hover .social-icon,
+.bg:focus .social-icon {
     fill: #fff;
-  
 }
+
+
+  
+  
 
 
 /* <!-- ПОСТОЯННЫЕ КЛИЕНТЫ --> */
@@ -445,15 +458,19 @@ img {
     border-radius: 4px;
 }
 
-
-.clients:hover{
+.clients:hover,
+.clients:focus {
     border: 1px solid #2196F3;
+    fill: var(--accent-color);
 }
 
-.client-x:hover{
+
+
+.clients:hover .client-x,
+.clients:focus .client-x {
     fill: var(--accent-color);
-   
 }
+
 
 
 
@@ -528,8 +545,6 @@ footer .link:focus {
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-   
-
 }
 
 .footer-social {
@@ -547,22 +562,16 @@ footer .link:focus {
 }
 
 
-
-.footer-bg:hover {
+.footer-bg:hover,
+.footer-bg:focus {
     background-color: var(--accent-color);
 }
 
 .footer-icon {
-    fill:#AFB1B8;  
-    color: #AFB1B8;
+    fill:#fff;  
     
 }
 
-
-.footer-icon:hover {
-    fill: #fff;
-  
-}
 
 
 
