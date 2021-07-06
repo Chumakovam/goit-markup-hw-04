@@ -270,10 +270,15 @@ img {
     line-height: 1.9;   
   
     padding: 10px 32px;
-    border-radius: 4px;        
+    border-radius: 4px;
+    border: none;        
 
     color: #FFFFFF;
  }
+
+ .section-button:hover {
+    background-color: #188CE8;
+}
 
 
  /****** НАШИ ПРЕИМУЩЕСТВА ******/
@@ -587,6 +592,8 @@ footer .link:focus {
     cursor: pointer;
     padding: 6px 22px;
     text-align: center;
+    border-radius: 4px;
+    border: none;
 
     background-color: #F5F4FA;
 }
